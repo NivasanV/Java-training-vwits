@@ -13,9 +13,21 @@ public class TestEmployee {
         e2.setId(10);
         e2.setName("Sachin");
 
+        Employee e3 = new Employee();
+        e3.setId(15);
+        e3.setName("Sumit");
+
+        emps.add(e3);
         emps.add(e2);
         emps.add(e1);
 
+        System.out.println(emps);
+
+        // Collections is built-in class from java.util package
+        // Sort is built-in method of Collecions class
+        // Sort methods except list
+        // items of the list must be implemetating java.lang.Comparable
+        Collections.sort(emps);
         System.out.println(emps);
     }
 }

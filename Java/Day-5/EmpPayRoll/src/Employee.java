@@ -1,6 +1,6 @@
 
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
     private int id;
     private String name;
 
@@ -23,6 +23,14 @@ public class Employee {
     @Override
     public String toString(){
         return "Employee [id="+id+", name="+name+"]";
+    }
+
+    // compareTo is a methos of comparable interface
+    // it is used to sort employee object
+    @Override
+    public int compareTo(Employee o) {
+        // TODO Auto-generated method stub
+        return this.id - o.id;
     }
 
 }
