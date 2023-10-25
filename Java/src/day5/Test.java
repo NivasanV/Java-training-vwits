@@ -28,14 +28,14 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> cities = new ArrayList<>();
-        cities.add("London");
-        cities.add("Paris");
-        cities.add("New York");
-        cities.add("Tokyo");
-        cities.add("Berlin");
+        cities.add("Pune");
+        cities.add("Mumbai");
+        cities.add("New Delhi");
+        cities.add("Chennai");
+        cities.add("Kolkata");
 
         Util.printCitiesWithLength(cities, 5);
 
-        Util.printCitiesWithCharacter(cities, 'B');
+        Util.printCitiesWithCharacter(cities, 'C');
     }
 }
