@@ -21,6 +21,7 @@ public class TestEmployee {
         emps.add(e2);
         emps.add(e1);
 
+        System.out.println("Employees before sorting");
         System.out.println(emps);
 
         // Collections is built-in class from java.util package
@@ -28,6 +29,12 @@ public class TestEmployee {
         // Sort methods except list
         // items of the list must be implemetating java.lang.Comparable
         Collections.sort(emps);
+        System.out.println("Employees after sorting using Comparable(Natural sorting algorithm)");
         System.out.println(emps);
+
+        System.out.println("Employees after sorting using Comparator(Additional sorting algorithm)");
+        Collections.sort(emps,(e11,e22) -> e11.getId() - e22.getId()); // lambda expression for Comparator interface
+        System.out.println(emps); 
+
     }
 }
