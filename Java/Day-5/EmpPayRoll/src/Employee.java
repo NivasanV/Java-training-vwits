@@ -30,7 +30,8 @@ public class Employee implements Comparable<Employee>{
     @Override
     public int compareTo(Employee o) {
         // TODO Auto-generated method stub
-        return this.id - o.id;
+        //return this.id - o.id;
+        return this.name.compareTo(o.name);
     }
 
 }
