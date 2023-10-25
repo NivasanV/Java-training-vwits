@@ -1,22 +1,22 @@
-package in.co.vwits.emppayroll.module;
+
 
 public class Employee {
     private int id;
     private String name;
 
-    public int getId(int id){
+    public int getId() {
         return id;
     }
 
-    public void setId(int id){
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 

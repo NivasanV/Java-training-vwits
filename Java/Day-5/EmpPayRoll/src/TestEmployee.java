@@ -1,8 +1,7 @@
 import java.util.*;
 
-import in.co.vwits.emppayroll.module.Employee;
 
-public class TestEmplyee {
+public class TestEmployee {
     public static void main(String[] args) throws Exception {
         List<Employee> emps = new ArrayList<>();
 
