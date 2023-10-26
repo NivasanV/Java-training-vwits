@@ -1,10 +1,11 @@
-import java.util.*;
+import java.util.List;
+import java.util.function.Predicate;
 
 public class Util {
 
-    public static void printCitiesConditionally(List<String> cities, Condition c){
+    public static void printCitiesConditionally(List<String> cities, Predicate<String> p){
         for(String name:cities){
-            if(c.check(name)){
+            if(p.test(name)){
                 System.out.println(name);
             }
         }

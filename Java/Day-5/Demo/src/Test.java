@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.function.Predicate;
 
 public class Test{
     public static void main(String[] args) {
@@ -15,8 +16,11 @@ public class Test{
         Condition c = (city)->city.length()>6;
 
         //while invoking printCitiesConditionally we are passing Fuction as a argument using lambda
-        //Util.printCitiesConditionally(cities, c);
+        
+        // Util.printCitiesConditionally(cities, c);
 
         Util.printCitiesConditionally(cities, city->city.startsWith("C"));
+
+ 
     }
 }
